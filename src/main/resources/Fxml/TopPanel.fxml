@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" prefHeight="60.0" prefWidth="1300.0" spacing="20.0" style="-fx-background-color: #1E1E1E;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.de.project_demedia_app.Controllers.MainWindowPanels.TopPanelController">
+   <AnchorPane maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="68.0" prefWidth="1516.0" style="-fx-background-color: transparent;">
+      <JFXButton fx:id="main_menu_button" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" layoutX="-20.0" prefHeight="70.0" prefWidth="240.0" text=" ">
+         <font>
+            <Font name="Berlin Sans FB" size="38.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <Label text="DEMEDIA" textFill="#b0b0b0">
+               <font>
+                  <Font name="Berlin Sans FB" size="38.0" />
+               </font>
+            </Label>
+         </graphic>
+      </JFXButton>
+      <Separator layoutX="220.0" layoutY="12.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="44.0" prefWidth="3.2" />
+      <HBox alignment="CENTER" layoutX="256.0" layoutY="16.799999237060547" maxHeight="-Infinity" prefHeight="35.0" prefWidth="290.0" style="-fx-background-color: #3E3E3E; -fx-border-color: #262627; -fx-border-radius: 50; -fx-background-radius: 50;">
+         <FontAwesomeIconView fill="#e0e0e0" glyphName="SEARCH" size="1.3em">
+            <HBox.margin>
+               <Insets right="5.0" />
+            </HBox.margin>
+         </FontAwesomeIconView>
+         <TextField fx:id="search_field" focusTraversable="false" prefHeight="26.0" prefWidth="246.0" promptText="Search" style="-fx-background-color: #3E3E3E;" styleClass="text-field" stylesheets="@../Styles/Other.css" />
+      </HBox>
+      <ListView fx:id="search_results_listview" focusTraversable="false" layoutX="256.0" layoutY="52.0" prefHeight="115.0" prefWidth="290.0" stylesheets="@../Styles/ListView.css" />
+      <Pane layoutX="566.4000244140625" prefHeight="60.0" prefWidth="460.0" style="-fx-background-color: transparent;" />
+      <HBox alignment="CENTER" layoutX="1046.4000244140625" prefHeight="60.0" prefWidth="187.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="4.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="4.0">
+         <MenuButton fx:id="user_menu_button" contentDisplay="CENTER" focusTraversable="false" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="54.0" prefWidth="169.0" style="-fx-border-radius: 15; -fx-background-radius: 15; -fx-background-color: #2D2D2D; -fx-border-color: #262627;" stylesheets="@../Styles/MenuButton.css">
+            <items>
+               <MenuItem mnemonicParsing="false" text="Log out" />
+            </items>
+            <font>
+               <Font name="Microsoft Sans Serif" size="18.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+            <graphic>
+               <HBox alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="163.0">
+                  <FontAwesomeIconView fill="#b0b0b0" glyphName="USER" size="2.2em" wrappingWidth="14.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></FontAwesomeIconView>
+                  <Label fx:id="username_label" alignment="CENTER" graphicTextGap="0.0" prefHeight="40.0" prefWidth="128.0" text="Username" textFill="#b0b0b0" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <opaqueInsets>
+                     <Insets />
+                  </opaqueInsets>
+               </HBox>
+            </graphic>
+            <HBox.margin>
+               <Insets left="10.0" />
+            </HBox.margin>
+         </MenuButton>
+      </HBox>
+   </AnchorPane>
+   <padding>
+      <Insets left="20.0" />
+   </padding>
+</HBox>

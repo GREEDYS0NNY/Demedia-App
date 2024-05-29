@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="parent_anchorpane" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="735.0" prefWidth="1292.0" style="-fx-border-color: transparent;" styleClass="background-color" stylesheets="@../Styles/Other.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.de.project_demedia_app.Controllers.MediaPages.MediaPageController">
+   <ScrollPane fx:id="media_page_scrollpane" hbarPolicy="NEVER" layoutX="3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="724.0" prefWidth="1286.0" style="-fx-border-color: transparent;" vbarPolicy="ALWAYS" AnchorPane.leftAnchor="3.2000000000000455" AnchorPane.rightAnchor="-3.0">
+      <StackPane fx:id="parent_stackpane" alignment="TOP_CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="1446.0" prefWidth="1274.0" styleClass="background-color" stylesheets="@../Styles/Other.css">
+         <ImageView fx:id="background_media_image" fitHeight="1446.0" fitWidth="1274.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER">
+            <effect>
+               <InnerShadow choke="0.58" height="255.0" radius="127.0" width="255.0">
+                  <color>
+                     <Color red="0.14901961386203766" green="0.14901961386203766" blue="0.15294118225574493" />
+                  </color>
+               </InnerShadow>
+            </effect>
+         </ImageView>
+         <VBox fx:id="parent_vbox" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1446.0" prefWidth="1278.0" style="-fx-background-color: transparent;" StackPane.alignment="CENTER">
+            <AnchorPane fx:id="media_info_anchorpane" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="650.0" prefWidth="1274.0" style="-fx-background-color: transparent;">
+               <AnchorPane layoutX="87.0" layoutY="17.0" prefHeight="354.0" prefWidth="757.0" style="-fx-background-color: #2B2B2BA5; -fx-border-color: #5a5a5a; -fx-border-radius: 15; -fx-background-radius: 15;">
+                  <Label fx:id="media_title_label" prefHeight="31.0" prefWidth="735.0" style="-fx-background-color: transparent;" text="Death Note" textFill="#b0b0b0">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="26.0" />
+                     </font>
+                     <padding>
+                        <Insets left="8.0" top="4.0" />
+                     </padding>
+                  </Label>
+                  <ImageView fx:id="media_image" fitHeight="300.0" fitWidth="200.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="8.0" />
+                  <VBox fx:id="media_info_vbox" layoutX="225.0" layoutY="42.0" prefHeight="296.0" prefWidth="506.0" spacing="10.0" style="-fx-background-color: transparent;">
+                     <HBox prefHeight="24.0" prefWidth="372.0">
+                        <Label fx:id="status_label" prefHeight="22.0" prefWidth="84.0" text="Status:" textFill="#b0b0b0">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="media_status_label" prefHeight="22.0" prefWidth="289.0" text="Completed. Oct 3, 2006 - Jun 26, 2007" textFill="#b0b0b0">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                        </Label>
+                     </HBox>
+                     <Separator prefWidth="200.0" />
+                     <HBox layoutX="10.0" layoutY="10.0" prefHeight="24.0" prefWidth="372.0">
+                        <Label prefWidth="84.0" text="Type:" textFill="#b0b0b0">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="media_type_label" prefHeight="21.0" prefWidth="245.0" text="TV Series" textFill="#b0b0b0">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                        </Label>
+                     </HBox>
+                     <Separator layoutX="10.0" layoutY="34.0" prefWidth="200.0" />
+                     <HBox fx:id="episodes_hbox" layoutX="10.0" layoutY="37.0" prefHeight="24.0" prefWidth="372.0">
+                        <Label prefWidth="84.0" text="Episodes:" textFill="#b0b0b0">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="media_episodes_label" prefHeight="21.0" prefWidth="245.0" text="37" textFill="#b0b0b0">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                        </Label>
+                     </HBox>
+                     <Separator fx:id="episodes_separator" layoutX="10.0" layoutY="61.0" prefWidth="200.0" />
+                     <HBox layoutX="10.0" layoutY="64.0" prefHeight="24.0" prefWidth="372.0">
+                        <Label prefWidth="84.0" text="Runtime:" textFill="#b0b0b0">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="media_runtime_label" prefHeight="21.0" prefWidth="245.0" text="23 min. per ep." textFill="#b0b0b0">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                        </Label>
+                     </HBox>
+                     <Separator layoutX="10.0" layoutY="88.0" prefWidth="200.0" />
+                     <HBox layoutX="10.0" layoutY="92.0" prefHeight="24.0" prefWidth="372.0">
+                        <Label prefWidth="84.0" text="Genres:" textFill="#b0b0b0">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="media_genres_label" prefHeight="22.0" prefWidth="361.0" text="Drama, Criminal, Psychological, Mystery" textFill="#b0b0b0">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                        </Label>
+                     </HBox>
+                     <Separator layoutX="10.0" layoutY="116.0" prefWidth="200.0" />
+                     <HBox layoutX="10.0" layoutY="119.0" prefHeight="24.0" prefWidth="372.0">
+                        <Label fx:id="production_label" prefWidth="84.0" text="Studios:" textFill="#b0b0b0">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="media_production_label" prefHeight="22.0" prefWidth="335.0" text="Madhouse" textFill="#b0b0b0">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                        </Label>
+                     </HBox>
+                     <Separator layoutX="10.0" layoutY="143.0" prefWidth="200.0" />
+                     <HBox fx:id="rating_hbox" alignment="CENTER_LEFT" layoutX="10.0" layoutY="146.0" prefHeight="42.0" prefWidth="372.0">
+                        <Label prefWidth="84.0" text="Rating:" textFill="#b0b0b0">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="18.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" prefHeight="23.0" prefWidth="118.0">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                           <FontAwesomeIconView fill="#eac019" glyphName="STAR" selectionFill="#eac019" size="1.5em" />
+                           <Label fx:id="media_rating_label" text="8.6" textFill="#b0b0b0">
+                              <font>
+                                 <Font name="System Bold" size="15.0" />
+                              </font>
+                              <HBox.margin>
+                                 <Insets left="5.0" />
+                              </HBox.margin>
+                           </Label>
+                           <Label text="/10" textFill="#b0b0b0">
+                              <HBox.margin>
+                                 <Insets />
+                              </HBox.margin>
+                              <font>
+                                 <Font size="13.5" />
+                              </font>
+                           </Label>
+                        </HBox>
+                     </HBox>
+                     <padding>
+                        <Insets left="8.0" />
+                     </padding>
+                  </VBox>
+               </AnchorPane>
+               <AnchorPane layoutX="87.0" layoutY="392.0" style="-fx-background-color: #2B2B2BA5; -fx-border-color: #5a5a5a; -fx-background-radius: 15; -fx-border-radius: 15;">
+                  <Label layoutX="0.015625" style="-fx-background-color: transparent;" text="Description" textFill="#b0b0b0">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets left="8.0" top="4.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="media_description_label" alignment="TOP_LEFT" layoutX="0.015625" layoutY="33.0" style="-fx-background-color: transparent;" text="Brutal murders, petty thefts, and senseless violence pollute the human world. In contrast, the realm of death gods is a humdrum, unchanging gambling &#10;den. The ingenious 17-year-old Japanese student Light Yagami and sadistic god of death Ryuk share one belief: their worlds are rotten.&#10;&#10;For his own amusement, Ryuk drops his Death Note into the human world. Light stumbles upon it, deeming the first of its rules ridiculous: the human &#10;whose name is written in this note shall die. However, the temptation is too great, and Light experiments by writing a felon's name, which disturbingly &#10;enacts his first murder.&#10;&#10;Aware of the terrifying godlike power that has fallen into his hands, Light—under the alias Kira—follows his wicked sense of justice with the ultimate goal&#10;of cleansing the world of all evil-doers. The meticulous mastermind detective L is already on his trail, but as Light's brilliance rivals L's, the grand chase for&#10;Kira turns into an intense battle of wits that can only end when one of them is dead." textFill="#b0b0b0">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="4.0" left="8.0" right="8.0" top="4.0" />
+                     </padding>
+                  </Label>
+               </AnchorPane>
+               <JFXButton fx:id="now_watching_button" focusTraversable="false" graphicTextGap="8.0" layoutX="1004.0" layoutY="65.0" prefHeight="71.0" prefWidth="185.0" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #5a5a5a;" styleClass="default-button" stylesheets="@../Styles/JFXButton.css" text="Add to Now Watching" textFill="#b0b0b0">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+                  <graphic>
+                     <FontAwesomeIconView fx:id="now_watching_icon" fill="TRANSPARENT" glyphName="PLAY_CIRCLE" selectionFill="BLACK" size="1.5em" stroke="#b0b0b0" />
+                  </graphic>
+               </JFXButton>
+               <JFXButton fx:id="favorites_button" focusTraversable="false" graphicTextGap="8.0" layoutX="1004.0" layoutY="159.0" prefHeight="71.0" prefWidth="185.0" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #5a5a5a;" styleClass="default-button" stylesheets="@../Styles/JFXButton.css" text="Add to Favorites" textFill="#b0b0b0">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+                  <graphic>
+                     <FontAwesomeIconView fx:id="favorites_icon" fill="TRANSPARENT" glyphName="HEART" selectionFill="BLACK" size="1.5em" stroke="#b0b0b0" />
+                  </graphic>
+               </JFXButton>
+               <JFXButton fx:id="watch_list_button" focusTraversable="false" graphicTextGap="8.0" layoutX="1004.0" layoutY="251.0" prefHeight="71.0" prefWidth="185.0" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #5a5a5a;" styleClass="default-button" stylesheets="@../Styles/JFXButton.css" text="Add to Watch List" textFill="#b0b0b0">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+                  <graphic>
+                     <FontAwesomeIconView fx:id="watch_list_icon" fill="TRANSPARENT" glyphName="BOOKMARK" selectionFill="BLACK" size="1.5em" stroke="#b0b0b0" />
+                  </graphic>
+               </JFXButton>
+            </AnchorPane>
+
+            <BorderPane fx:id="parent_borderpane" prefHeight="480.0" prefWidth="1274.0" style="-fx-background-color: transparent;" VBox.vgrow="NEVER">
+               <center>
+                  <Pane prefHeight="480.0" prefWidth="1138.0" style="-fx-background-color: transparent;" BorderPane.alignment="CENTER">
+                     <StackPane fx:id="child_stackpane" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="1120.0" style="-fx-background-color: #000000;">
+                        <Arc fx:id="loading_arc" fill="TRANSPARENT" length="270.0" radiusX="20.0" radiusY="20.0" strokeWidth="4.0">
+                           <stroke>
+                              <LinearGradient endX="0.2651514880584948" endY="0.6931818172787174" proportional="false" startX="1.0" startY="0.9053030393340371">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.03500000014901161" green="0.05833333358168602" blue="0.07000000029802322" opacity="0.0" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.28725038402457764">
+                                       <color>
+                                          <Color red="0.12160000205039978" green="0.5472000241279602" blue="0.7599999904632568" opacity="0.0" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.4439324116743472">
+                                       <color>
+                                          <Color red="0.12160000205039978" green="0.5472000241279602" blue="0.7599999904632568" opacity="0.0" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.6344086021505377">
+                                       <color>
+                                          <Color red="0.12160000205039978" green="0.5472000241279602" blue="0.7599999904632568" opacity="0.0" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </stroke></Arc>
+                        <Label prefHeight="51.0" prefWidth="450.0" text="Video will load shortly, please wait." textFill="WHITE" visible="false">
+                           <font>
+                              <Font name="Roboto Light" size="29.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="214.0" prefWidth="450.0" text="&#10;&#10;&#10;&#10;If the video does not load, please check&#10;your internet connection or try reopening this page." textAlignment="CENTER" textFill="WHITE" visible="false">
+                           <font>
+                              <Font name="Roboto Light" size="20.0" />
+                           </font>
+                        </Label>
+                        <MediaView fx:id="video_mediaview" fitHeight="480.0" fitWidth="1120.0" StackPane.alignment="CENTER">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </MediaView>
+                        <BorderPane prefHeight="480.0" prefWidth="200.0" style="-fx-background-color: transparent;" StackPane.alignment="CENTER">
+                           <bottom>
+                              <Pane fx:id="controls_pane" prefHeight="52.0" prefWidth="1120.0" style="-fx-background-color: transparent;" BorderPane.alignment="CENTER">
+                                 <JFXSlider fx:id="time_slider" focusTraversable="false" max="1.0" maxWidth="-Infinity" prefHeight="24.0" prefWidth="1118.0" stylesheets="@../Styles/JFXSlider.css" value="0.001">
+                                    <padding>
+                                       <Insets bottom="5.0" left="2.0" top="5.0" />
+                                    </padding>
+                                    <cursor>
+                                       <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <styleClass>
+                                       <String fx:value="jfx-slider-style" />
+                                       <String fx:value="time-slider" />
+                                    </styleClass>
+                                 </JFXSlider>
+                                 <HBox fx:id="controls_hbox" alignment="TOP_CENTER" layoutY="24.0" maxWidth="-Infinity" prefHeight="22.0" prefWidth="1118.0" style="-fx-background-color: transparent;">
+                                    <padding>
+                                       <Insets bottom="10.0" />
+                                    </padding>
+                                    <Button fx:id="PPR_button" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" minHeight="-Infinity" prefHeight="14.0" style="-fx-background-color: transparent;" textFill="TRANSPARENT">
+                                       <HBox.margin>
+                                          <Insets left="2.0" top="2.0" />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <FontAwesomeIconView fx:id="PPR_icon" fill="#9c9a9a" glyphName="PLAY" size="13" />
+                                       </graphic>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <HBox fx:id="volume_hbox" alignment="CENTER" fillHeight="false" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="14.0" style="-fx-background-color: transparent;">
+                                       <HBox.margin>
+                                          <Insets top="2.0" />
+                                       </HBox.margin>
+                                       <Button fx:id="volume_button" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" style="-fx-background-color: transparent;" textFill="TRANSPARENT">
+                                          <padding>
+                                             <Insets left="10.0" right="10.0" />
+                                          </padding>
+                                          <graphic>
+                                             <FontAwesomeIconView fx:id="volume_icon" fill="#9c9a9a" glyphName="VOLUME_UP" size="15" />
+                                          </graphic>
+                                          <cursor>
+                                             <Cursor fx:constant="HAND" />
+                                          </cursor>
+                                          <HBox.margin>
+                                             <Insets />
+                                          </HBox.margin>
+                                       </Button>
+                                       <JFXSlider fx:id="volume_slider" focusTraversable="false" max="1.0" stylesheets="@../Styles/JFXSlider.css">
+                                          <cursor>
+                                             <Cursor fx:constant="HAND" />
+                                          </cursor>
+                                          <styleClass>
+                                             <String fx:value="jfx-slider-style" />
+                                             <String fx:value="volume-slider" />
+                                          </styleClass>
+                                       </JFXSlider>
+                                    </HBox>
+                                    <Label fx:id="current_time_label" style="-fx-background-color: transparent;" textFill="#9c9a9a">
+                                       <font>
+                                          <Font name="Roboto Light" size="13.5" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="total_time_label" style="-fx-background-color: transparent;" textFill="#9c9a9a">
+                                       <font>
+                                          <Font name="Roboto Light" size="13.5" />
+                                       </font>
+                                       <padding>
+                                          <Insets right="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <HBox alignment="CENTER_RIGHT" fillHeight="false" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="14.0" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS">
+                                       <Button fx:id="speed_button" contentDisplay="CENTER" focusTraversable="false" layoutX="816.0" layoutY="14.0" style="-fx-background-color: transparent;" text="1X" textFill="#9c9a9a">
+                                          <cursor>
+                                             <Cursor fx:constant="HAND" />
+                                          </cursor>
+                                          <StackPane.margin>
+                                             <Insets />
+                                          </StackPane.margin>
+                                          <font>
+                                             <Font size="13.0" />
+                                          </font>
+                                       </Button>
+                                       <Button fx:id="fullscreen_button" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" style="-fx-background-color: transparent;" textFill="TRANSPARENT">
+                                          <graphic>
+                                             <FontAwesomeIconView fx:id="fullscreen_icon" fill="#9c9a9a" glyphName="EXPAND" size="15" />
+                                          </graphic>
+                                          <cursor>
+                                             <Cursor fx:constant="HAND" />
+                                          </cursor>
+                                          <HBox.margin>
+                                             <Insets right="2.0" />
+                                          </HBox.margin>
+                                          <StackPane.margin>
+                                             <Insets />
+                                          </StackPane.margin>
+                                       </Button>
+                                       <HBox.margin>
+                                          <Insets top="2.0" />
+                                       </HBox.margin>
+                                    </HBox>
+                                 </HBox>
+                              </Pane>
+                           </bottom>
+                           <top>
+                              <Pane prefHeight="37.0" prefWidth="1120.0" style="-fx-background-color: transparent;" BorderPane.alignment="CENTER">
+                                 <JFXComboBox fx:id="episodes_choicebox" focusColor="#9c9a9a" focusTraversable="false" layoutX="14.0" layoutY="6.0" prefHeight="25.0" prefWidth="116.0" stylesheets="@../Styles/JFXComboBox.css">
+                                    <cursor>
+                                       <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                 </JFXComboBox>
+                              </Pane>
+                           </top>
+                        </BorderPane>
+                     </StackPane>
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                  </Pane>
+               </center>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="85.0" right="85.0" />
+               </padding>
+            </BorderPane>
+         </VBox>
+      </StackPane>
+      <padding>
+         <Insets top="2.0" />
+      </padding>
+      <stylesheets>
+         <URL value="@../Styles/ScrollPane.css" />
+         <URL value="@../Styles/Other.css" />
+      </stylesheets>
+      <styleClass>
+         <String fx:value="scroll-bar" />
+         <String fx:value="background-color" />
+      </styleClass>
+   </ScrollPane>
+</AnchorPane>

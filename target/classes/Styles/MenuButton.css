@@ -1,0 +1,26 @@
+.menu-button:hover {
+    -fx-background-color: #2A2A2A;
+}
+
+.menu-button .arrow {
+    -fx-background-color: transparent;
+}
+
+.menu-item {
+    -fx-background-radius: 9;
+    -fx-font-size: 16px;
+    -fx-background-color: #3E3E3E;
+    -fx-text-fill: #B0B0B0;
+    -fx-cursor: hand;
+}
+
+.menu-item:hover {
+    -fx-background-color: #3A3A3A;
+    -fx-text-fill: #B0B0B0;
+}
+
+.context-menu {
+    -fx-background-color: #3E3E3E;
+    -fx-background-radius: 15;
+    -fx-pref-width: 200;
+}

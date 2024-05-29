@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="735.0" prefWidth="1292.0" stylesheets="@../Styles/Other.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.de.project_demedia_app.Controllers.Sections.BrowseSectionController">
+    <ScrollPane hbarPolicy="NEVER" layoutX="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="724.0" prefWidth="1289.0" stylesheets="@../Styles/ScrollPane.css" AnchorPane.leftAnchor="3.2000000000000455" AnchorPane.rightAnchor="0.0">
+        <VBox alignment="TOP_CENTER" prefHeight="735.0" prefWidth="1167.0" styleClass="background-color" stylesheets="@../Styles/Other.css">
+            <HBox alignment="CENTER" prefHeight="1300.0" prefWidth="1167.0">
+                <VBox.margin>
+                    <Insets top="10.0" />
+                </VBox.margin>
+                <GridPane fx:id="banners_layout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1160.0" style="-fx-background-color: transparent;">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="205.0" minHeight="10.0" prefHeight="205.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="205.0" minHeight="10.0" prefHeight="205.0" valignment="CENTER" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="205.0" minHeight="10.0" prefHeight="205.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="205.0" minHeight="10.0" prefHeight="205.0" valignment="CENTER" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <HBox.margin>
+                        <Insets left="60.0" right="60.0" top="20.0" />
+                    </HBox.margin>
+                </GridPane>
+            </HBox>
+        </VBox>
+      <padding>
+         <Insets top="2.0" />
+      </padding>
+      <styleClass>
+         <String fx:value="scroll-bar" />
+         <String fx:value="background-color" />
+      </styleClass>
+    </ScrollPane>
+   <styleClass>
+      <String fx:value="background-color" />
+      <String fx:value="border-color" />
+   </styleClass>
+</AnchorPane>

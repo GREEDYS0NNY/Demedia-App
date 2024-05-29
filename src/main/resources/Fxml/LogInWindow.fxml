@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.de.project_demedia_app.Controllers.Windows.LogInWindowController">
+    <AnchorPane fx:id="login_window">
+        <StackPane style="-fx-background-color: #141414;">
+            <ImageView fitHeight="500.0" fitWidth="740.0" pickOnBounds="true">
+                <effect>
+                    <GaussianBlur />
+                </effect>
+                <Image url="@../Images/LogInBackground.jpg" />
+            </ImageView>
+            <AnchorPane prefHeight="500.0" prefWidth="740.0" style="-fx-background-color: transparent;">
+                <StackPane layoutX="300.0" prefHeight="420.0" prefWidth="440.0">
+                    <ImageView fitHeight="420.0" fitWidth="436.0" pickOnBounds="true" />
+                    <AnchorPane prefHeight="420.0" prefWidth="440.0" style="-fx-background-color: transparent;">
+                        <Label layoutX="70.0" layoutY="100.0" text="Welcome back!" textFill="#f0f0f0">
+                            <font>
+                                <Font size="29.0" />
+                            </font>
+                        </Label>
+                  <HBox layoutX="70.0" layoutY="160.0" prefHeight="35.0" prefWidth="300.0" style="-fx-background-color: #3E3E3EA2; -fx-background-radius: 5px;" />
+                  <HBox layoutX="70.0" layoutY="214.0" prefHeight="35.0" prefWidth="300.0" style="-fx-background-color: #3E3E3EA2; -fx-background-radius: 5px;" />
+                        <HBox alignment="CENTER_LEFT" layoutX="70.0" layoutY="160.0" prefHeight="35.0" prefWidth="300.0" style="-fx-border-color: #BEBFC1; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <FontAwesomeIconView glyphName="USER" glyphStyle="-fx-fill:#BEBFC1" size="1.2em">
+                                <HBox.margin>
+                                    <Insets left="10.0" />
+                                </HBox.margin>
+                            </FontAwesomeIconView>
+                            <TextField fx:id="username_field" focusTraversable="false" promptText="Username" style="-fx-background-color: transparent;" styleClass="text-field" stylesheets="@../Styles/Other.css" HBox.hgrow="ALWAYS">
+                                <font>
+                                    <Font size="14.0" />
+                                </font>
+                            </TextField>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="70.0" layoutY="214.0" prefHeight="35.0" prefWidth="300.0" style="-fx-border-color: #BEBFC1; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <FontAwesomeIconView glyphName="LOCK" glyphStyle="-fx-fill:#BEBFC1" size="1.2em">
+                                <HBox.margin>
+                                    <Insets left="10.0" />
+                                </HBox.margin>
+                            </FontAwesomeIconView>
+                            <PasswordField fx:id="password_field" focusTraversable="false" promptText="Password" style="-fx-background-color: transparent;" styleClass="text-field" stylesheets="@../Styles/Other.css" HBox.hgrow="ALWAYS">
+                                <font>
+                                    <Font size="14.0" />
+                                </font>
+                            </PasswordField>
+                        </HBox>
+                        <JFXButton fx:id="login_button" focusTraversable="false" layoutX="70.0" layoutY="273.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="100.0" ripplerFill="BLACK" style="-fx-background-color: #141414B9; -fx-background-radius: 5px; -fx-border-color: #808080; -fx-border-radius: 5px;" text="LOGIN" textFill="#f0f0f0">
+                            <font>
+                                <Font name="Microsoft Sans Serif" size="12.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </JFXButton>
+                        <JFXCheckBox fx:id="remember_me_choicebox" focusTraversable="false" layoutX="266.0" layoutY="284.0" text="Remember me" textFill="#f0f0f0" unCheckedColor="#bebfc1">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </JFXCheckBox>
+                        <Label fx:id="error_label" layoutX="70.0" layoutY="330.0" style="-fx-text-fill: #FF0000;" />
+                    </AnchorPane>
+                </StackPane>
+                <StackPane>
+                    <VBox opacity="0.5" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #361134; -fx-background-radius: 15; -fx-border-radius: 15;" />
+                    <VBox alignment="CENTER" prefHeight="500.0" prefWidth="300.0" spacing="15.0" style="-fx-background-color: transparent;">
+                        <JFXButton fx:id="facebook_button" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="250.0" ripplerFill="#3e62a0" style="-fx-background-color: #517CC0; -fx-background-radius: 6px; -fx-text-fill: #FFFFFF; -fx-border-radius: 6px;" text=" ">
+                            <graphic>
+                                <HBox alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="142.0">
+                                    <FontAwesomeIconView fill="#f0f0f0" glyphName="FACEBOOK" selectionFill="#f0f0f0" size="2em" wrappingWidth="17.714280128479004" />
+                                    <Label text="Login with Facebook" textFill="#f0f0f0">
+                                        <HBox.margin>
+                                            <Insets left="10.0" />
+                                        </HBox.margin>
+                                        <font>
+                                            <Font name="Microsoft Sans Serif" size="12.0" />
+                                        </font>
+                                    </Label>
+                                </HBox>
+                            </graphic>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="apple_button" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" graphicTextGap="0.0" layoutX="35.0" layoutY="265.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="250.0" ripplerFill="#0f0f0f" style="-fx-background-color: #141414; -fx-background-radius: 6px; -fx-text-fill: #FFFFFF; -fx-border-radius: 6px;" text=" ">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <graphic>
+                                <HBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="148.0">
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                    <FontAwesomeIconView fill="#f0f0f0" glyphName="APPLE" selectionFill="#f0f0f0" size="2em" />
+                           <Label text="Login with Apple" textFill="#f0f0f0">
+                              <HBox.margin>
+                                 <Insets left="13.5" />
+                              </HBox.margin>
+                              <font>
+                                 <Font name="Microsoft Sans Serif" size="12.0" />
+                              </font>
+                           </Label>
+                                </HBox>
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="google_button" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" graphicTextGap="0.0" layoutX="35.0" layoutY="321.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="250.0" ripplerFill="#b33b26" style="-fx-background-color: #DF4930; -fx-background-radius: 6px; -fx-text-fill: #FFFFFF; -fx-border-radius: 6px;" text=" ">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <graphic>
+                                <HBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="151.0">
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                    <FontAwesomeIconView fill="#f0f0f0" glyphName="GOOGLE" selectionFill="#f0f0f0" size="2em" />
+                           <Label text="Login with Google" textFill="#f0f0f0">
+                              <HBox.margin>
+                                 <Insets left="13.2" />
+                              </HBox.margin>
+                              <font>
+                                 <Font name="Microsoft Sans Serif" size="12.0" />
+                              </font>
+                           </Label>
+                                </HBox>
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="phone_button" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" layoutX="35.0" layoutY="144.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="250.0" ripplerFill="#006600" style="-fx-background-color: #008000; -fx-background-radius: 6px; -fx-text-fill: #FFFFFF; -fx-border-radius: 6px;" text=" ">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <graphic>
+                                <HBox alignment="CENTER" prefHeight="51.0" prefWidth="224.0">
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                    <FontAwesomeIconView fill="#f0f0f0" glyphName="PHONE" selectionFill="#f0f0f0" size="2em">
+                              <HBox.margin>
+                                 <Insets left="21.0" />
+                              </HBox.margin></FontAwesomeIconView>
+                           <Label prefHeight="18.0" prefWidth="139.0" text="Login with phone number" textFill="#f0f0f0">
+                              <HBox.margin>
+                                 <Insets left="14.5" />
+                              </HBox.margin>
+                              <font>
+                                 <Font name="Microsoft Sans Serif" size="12.0" />
+                              </font>
+                           </Label>
+                                </HBox>
+                            </graphic>
+                        </JFXButton>
+                    </VBox>
+                </StackPane>
+                <StackPane layoutX="300.0" layoutY="420.0">
+                    <Pane opacity="0.5" prefHeight="80.0" prefWidth="440.0" style="-fx-background-color: #ABACAD; -fx-background-radius: 15; -fx-border-radius: 15;" />
+                    <Pane prefHeight="80.0" prefWidth="440.0" style="-fx-background-color: transparent;" StackPane.alignment="CENTER">
+                        <Hyperlink fx:id="create_account_hyperlink" focusTraversable="false" layoutX="68.0" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Create an account." textFill="#f0f0f0" underline="true">
+                            <font>
+                                <Font name="Microsoft Sans Serif" size="12.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Hyperlink>
+                        <Label layoutX="13.0" layoutY="33.0" text="New user?" textFill="#f0f0f0" />
+                        <Hyperlink focusTraversable="false" layoutX="322.0" layoutY="29.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="104.0" text="Forgot password?" textFill="#f0f0f0" underline="true">
+                            <font>
+                                <Font name="Microsoft Sans Serif" size="12.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Hyperlink>
+                    </Pane>
+                </StackPane>
+            </AnchorPane>
+        </StackPane>
+    </AnchorPane>
+    <AnchorPane fx:id="sign_up_window" prefHeight="500.0" prefWidth="740.0" style="-fx-background-color: transparent;" visible="false">
+        <StackPane prefHeight="500.0" prefWidth="672.0" style="-fx-background-color: #141414;">
+            <ImageView fitHeight="500.0" fitWidth="740.0" pickOnBounds="true">
+                <effect>
+                    <GaussianBlur />
+                </effect>
+                <Image url="@../Images/LogInBackground.jpg" />
+            </ImageView>
+            <StackPane prefHeight="487.0" prefWidth="688.0" style="-fx-background-color: transparent;">
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" opacity="0.47" prefHeight="460.0" prefWidth="509.0" style="-fx-background-radius: 15; -fx-background-color: #141414; -fx-border-color: #141414; -fx-border-radius: 15;" StackPane.alignment="CENTER" />
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="483.0" prefWidth="464.0" StackPane.alignment="CENTER">
+                    <Label layoutX="108.0" layoutY="14.0" prefHeight="43.0" prefWidth="294.0" text="Welcome to Demedia!" textFill="#f0f0f0">
+                        <font>
+                            <Font size="29.0" />
+                        </font>
+                    </Label>
+                    <Hyperlink fx:id="login_hyperlink" focusTraversable="false" layoutX="290.0" layoutY="378.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Log In" textFill="#f0f0f0" underline="true">
+                        <font>
+                            <Font name="Microsoft Sans Serif" size="12.0" />
+                        </font>
+                        <cursor>
+                            <Cursor fx:constant="HAND" />
+                        </cursor>
+                    </Hyperlink>
+                    <Label layoutX="15.0" layoutY="51.0" prefHeight="51.0" prefWidth="480.0" text="Demedia is your personal guide to the world of movies, anime and TV series.&#10;Create a new account and enjoy watching your favorite media in high quality." textFill="#f0f0f0">
+                        <font>
+                            <Font size="14.0" />
+                        </font>
+                    </Label>
+               <HBox layoutX="108.0" layoutY="132.4" prefHeight="35.0" prefWidth="294.0" style="-fx-background-color: #3E3E3EA2; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+                  <effect>
+                     <Glow />
+                  </effect>
+               </HBox>
+               <HBox layoutX="108.0" layoutY="184.0" prefHeight="35.0" prefWidth="294.0" style="-fx-background-color: #3E3E3EA2; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+                  <effect>
+                     <Glow />
+                  </effect>
+               </HBox>
+               <HBox layoutX="108.0" layoutY="232.4" prefHeight="35.0" prefWidth="294.0" style="-fx-background-color: #3E3E3EA2; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+                  <effect>
+                     <Glow />
+                  </effect>
+               </HBox>
+                    <VBox alignment="CENTER" layoutX="108.0" layoutY="125.0" prefHeight="207.0" prefWidth="294.0" spacing="15.0">
+                        <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="300.0" spacing="5.0" style="-fx-border-color: #BEBFC1; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <FontAwesomeIconView glyphName="USER" glyphStyle="-fx-fill:#BEBFC1" size="1.2em">
+                                <HBox.margin>
+                                    <Insets left="10.0" />
+                                </HBox.margin>
+                            </FontAwesomeIconView>
+                            <TextField fx:id="signup_username_field" focusTraversable="false" promptText="Username" style="-fx-background-color: transparent;" styleClass="text-field" stylesheets="@../Styles/Other.css" HBox.hgrow="ALWAYS">
+                                <font>
+                                    <Font size="14.0" />
+                                </font>
+                            </TextField>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="300.0" spacing="5.0" style="-fx-border-color: #BEBFC1; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <FontAwesomeIconView glyphName="ENVELOPE" glyphStyle="-fx-fill:#BEBFC1" size="1.2em">
+                                <HBox.margin>
+                                    <Insets left="10.0" />
+                                </HBox.margin>
+                            </FontAwesomeIconView>
+                            <TextField fx:id="signup_email_field" focusTraversable="false" promptText="Email" style="-fx-background-color: transparent;" styleClass="text-field" stylesheets="@../Styles/Other.css" HBox.hgrow="ALWAYS">
+                                <font>
+                                    <Font size="14.0" />
+                                </font>
+                                <HBox.margin>
+                                    <Insets />
+                                </HBox.margin>
+                            </TextField>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="300.0" spacing="5.0" style="-fx-border-color: #BEBFC1; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <FontAwesomeIconView glyphName="LOCK" glyphStyle="-fx-fill:#BEBFC1" size="1.2em">
+                                <HBox.margin>
+                                    <Insets left="13.0" />
+                                </HBox.margin>
+                            </FontAwesomeIconView>
+                            <PasswordField fx:id="signup_password_field" focusTraversable="false" promptText="Password" style="-fx-background-color: transparent;" styleClass="text-field" stylesheets="@../Styles/Other.css" HBox.hgrow="ALWAYS">
+                                <font>
+                                    <Font size="14.0" />
+                                </font>
+                                <HBox.margin>
+                                    <Insets />
+                                </HBox.margin>
+                            </PasswordField>
+                        </HBox>
+                        <JFXButton fx:id="sign_up_button" alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="100.0" ripplerFill="BLACK" style="-fx-background-color: #141414B3; -fx-background-radius: 5px; -fx-border-color: #808080; -fx-border-radius: 5px;" text="SIGN UP" textFill="#f0f0f0">
+                            <font>
+                                <Font name="Microsoft Sans Serif" size="12.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <VBox.margin>
+                                <Insets left="-196.0" />
+                            </VBox.margin>
+                        </JFXButton>
+                    </VBox>
+                    <Label layoutX="155.0" layoutY="381.0" text="Already have an account?" textFill="#f0f0f0" />
+                    <Separator layoutX="159.0" layoutY="361.0" opacity="0.4" prefWidth="200.0">
+                        <padding>
+                            <Insets left="-50.0" right="-50.0" />
+                        </padding>
+                    </Separator>
+                    <Label layoutX="141.0" layoutY="443.0" text="© 2024 Demedia Inc. All rights reserved." textFill="#f0f0f0" />
+                    <Label layoutX="99.0" layoutY="413.0" text="By creating an account, you agree to the" textFill="#f0f0f0" />
+                    <Hyperlink alignment="TOP_LEFT" focusTraversable="false" layoutX="313.0" layoutY="411.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="23.0" prefWidth="112.0" text="Terms of Service." textFill="#f0f0f0" underline="true">
+                        <font>
+                            <Font name="Microsoft Sans Serif" size="12.0" />
+                        </font>
+                        <cursor>
+                            <Cursor fx:constant="HAND" />
+                        </cursor>
+                    </Hyperlink>
+                    <Label fx:id="signup_error_label" layoutX="108.0" layoutY="323.0" prefHeight="43.0" prefWidth="380.0" textFill="RED" />
+               <Label fx:id="password_error_label" layoutX="69.0" layoutY="325.0" prefHeight="40.0" prefWidth="411.0" textAlignment="CENTER" textFill="RED" />
+                </AnchorPane>
+            </StackPane>
+        </StackPane>
+    </AnchorPane>
+</AnchorPane>

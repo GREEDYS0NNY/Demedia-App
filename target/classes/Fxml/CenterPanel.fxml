@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="735.0" prefWidth="1295.0" style="-fx-border-color: transparent;" styleClass="background-color" stylesheets="@../Styles/Other.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.de.project_demedia_app.Controllers.MainWindowPanels.CenterPanelController">
+   <ScrollPane hbarPolicy="NEVER" layoutX="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="724.0" prefWidth="1289.0" style="-fx-border-color: transparent;" AnchorPane.leftAnchor="3.2000000000000455" AnchorPane.rightAnchor="0.0">
+      <VBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="843.0" prefWidth="1278.0" spacing="10.0" style="-fx-border-color: transparent;" styleClass="background-color" stylesheets="@../Styles/Other.css">
+         <Label layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="266.0" text="Anime" textFill="#b0b0b0">
+            <VBox.margin>
+               <Insets left="10.0" top="10.0" />
+            </VBox.margin>
+            <font>
+               <Font name="Microsoft Sans Serif" size="24.0" />
+            </font>
+         </Label>
+         <ScrollPane fitToWidth="true" hbarPolicy="ALWAYS" hvalue="0.5" minHeight="-Infinity" pannable="true" prefHeight="230.0" prefWidth="1250.0" style="-fx-border-color: transparent;" styleClass="background-color" stylesheets="@../Styles/Other.css" vbarPolicy="NEVER">
+            <VBox.margin>
+               <Insets left="10.0" />
+            </VBox.margin>
+            <HBox fx:id="anime_layout" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="214.0" prefWidth="1372.0" spacing="10.0" styleClass="background-color" stylesheets="@../Styles/Other.css" />
+         </ScrollPane>
+         <Label layoutX="20.0" layoutY="15.0" prefHeight="27.2" prefWidth="266.0" text="Films" textFill="#b0b0b0">
+            <font>
+               <Font name="Microsoft Sans Serif" size="24.0" />
+            </font>
+            <VBox.margin>
+               <Insets left="10.0" />
+            </VBox.margin>
+         </Label>
+         <ScrollPane fitToWidth="true" hbarPolicy="ALWAYS" hvalue="0.5" layoutX="20.0" layoutY="52.0" minHeight="-Infinity" pannable="true" prefHeight="230.0" prefWidth="1250.0" style="-fx-border-color: transparent;" styleClass="background-color" stylesheets="@../Styles/Other.css" vbarPolicy="NEVER">
+            <VBox.margin>
+               <Insets left="10.0" />
+            </VBox.margin>
+            <HBox fx:id="films_layout" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="214.0" prefWidth="1372.0" spacing="10.0" styleClass="background-color" stylesheets="@../Styles/Other.css" />
+         </ScrollPane>
+         <Label layoutX="10.0" layoutY="263.0" prefHeight="27.2" prefWidth="266.0" text="Series" textFill="#b0b0b0">
+            <font>
+               <Font name="Microsoft Sans Serif" size="24.0" />
+            </font>
+            <VBox.margin>
+               <Insets left="10.0" />
+            </VBox.margin>
+         </Label>
+         <ScrollPane fitToWidth="true" hbarPolicy="ALWAYS" hvalue="0.5" layoutX="10.0" layoutY="300.0" minHeight="-Infinity" pannable="true" prefHeight="230.0" prefWidth="1250.0" style="-fx-border-color: transparent;" styleClass="background-color" stylesheets="@../Styles/Other.css" vbarPolicy="NEVER">
+            <VBox.margin>
+               <Insets left="10.0" />
+            </VBox.margin>
+            <HBox fx:id="series_layout" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="214.0" prefWidth="1372.0" spacing="10.0" styleClass="background-color" stylesheets="@../Styles/Other.css" />
+         </ScrollPane>
+      </VBox>
+      <padding>
+         <Insets top="2.0" />
+      </padding>
+      <stylesheets>
+         <URL value="@../Styles/ScrollPane.css" />
+         <URL value="@../Styles/Other.css" />
+      </stylesheets>
+      <styleClass>
+         <String fx:value="scroll-bar" />
+         <String fx:value="background-color" />
+      </styleClass>
+   </ScrollPane>
+</AnchorPane>

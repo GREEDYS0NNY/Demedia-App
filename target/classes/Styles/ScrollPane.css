@@ -1,0 +1,32 @@
+.scroll-pane .increment-button,
+.scroll-pane .decrement-button {
+    -fx-padding: 0;
+    -fx-opacity: 0;
+    -fx-pref-width: 0;
+    -fx-pref-height: 0;
+}
+
+.scroll-pane .scroll-bar {
+    -fx-background-color: #262627;
+}
+
+.scroll-pane .scroll-bar:vertical {
+    -fx-background-radius: 5px;
+}
+
+.scroll-pane .scroll-bar:horizontal {
+    -fx-background-radius: 5px;
+}
+
+.scroll-pane .scroll-bar .thumb {
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+    -fx-background-radius: 5px;
+}
+
+.scroll-pane .scroll-bar .thumb:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+}
+
+.scroll-pane .scroll-bar .thumb:pressed {
+    -fx-background-color: rgba(0, 0, 0, 0.7);
+}

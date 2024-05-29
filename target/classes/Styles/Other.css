@@ -1,0 +1,13 @@
+/* Main Theme Colors */
+.background-color {
+    -fx-background-color: #262627;
+}
+
+.border-color {
+    -fx-border-color: #262627;
+}
+
+/* TextField & PasswordField */
+.text-field {
+    -fx-text-fill: #B0B0B0;
+}

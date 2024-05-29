@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.4" prefWidth="250.4" style="-fx-background-color: #1E1E1E;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.de.project_demedia_app.Controllers.MainWindowPanels.LeftPanelController">
+   <AnchorPane prefHeight="734.0" prefWidth="250.0" style="-fx-background-color: transparent;">
+      <VBox prefHeight="211.0" prefWidth="250.0" spacing="5.0" style="-fx-background-color: transparent;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <Label prefHeight="42.0" prefWidth="162.0" text="Browse" textFill="#b0b0b0">
+            <VBox.margin>
+               <Insets left="10.0" />
+            </VBox.margin>
+            <font>
+               <Font name="Microsoft Sans Serif" size="18.0" />
+            </font>
+         </Label>
+         <JFXButton fx:id="top_anime_button" focusTraversable="false" graphicTextGap="15.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="267.0" styleClass="default-jfx-button" stylesheets="@../Styles/JFXButton.css" text="Top Anime             ">
+            <font>
+               <Font size="18.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+            <graphic>
+               <HBox prefHeight="50.0" prefWidth="250.0">
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="47.0">
+                     <FontAwesomeIconView fill="#e0e0e0" glyphName="REORDER">
+                        <HBox.margin>
+                           <Insets left="13.0" />
+                        </HBox.margin>
+                     </FontAwesomeIconView>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="174.0">
+                     <Label text="Top Anime" textFill="#b0b0b0">
+                        <font>
+                           <Font size="18.0" />
+                        </font>
+                        <HBox.margin>
+                           <Insets left="5.0" />
+                        </HBox.margin>
+                     </Label>
+                  </HBox>
+               </HBox>
+            </graphic>
+            <VBox.margin>
+               <Insets left="-10.0" />
+            </VBox.margin>
+         </JFXButton>
+         <JFXButton fx:id="top_films_button" focusTraversable="false" graphicTextGap="15.0" layoutX="10.0" layoutY="52.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="267.0" styleClass="default-jfx-button" stylesheets="@../Styles/JFXButton.css" text="Top Films               ">
+            <font>
+               <Font size="18.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+            <graphic>
+               <HBox prefHeight="50.0" prefWidth="250.0">
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="47.0">
+                     <FontAwesomeIconView fill="#e0e0e0" glyphName="REORDER">
+                        <HBox.margin>
+                           <Insets left="13.0" />
+                        </HBox.margin>
+                     </FontAwesomeIconView>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="174.0">
+                     <Label text="Top Films" textFill="#b0b0b0">
+                        <font>
+                           <Font size="18.0" />
+                        </font>
+                        <HBox.margin>
+                           <Insets left="5.0" />
+                        </HBox.margin>
+                     </Label>
+                  </HBox>
+               </HBox>
+            </graphic>
+            <VBox.margin>
+               <Insets left="-10.0" />
+            </VBox.margin>
+         </JFXButton>
+         <JFXButton fx:id="top_series_button" focusTraversable="false" graphicTextGap="15.0" layoutX="10.0" layoutY="103.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="267.0" styleClass="default-jfx-button" stylesheets="@../Styles/JFXButton.css" text="Top Series              ">
+            <font>
+               <Font size="18.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+            <graphic>
+               <HBox prefHeight="50.0" prefWidth="250.0">
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="47.0">
+                     <FontAwesomeIconView fill="#e0e0e0" glyphName="REORDER">
+                        <HBox.margin>
+                           <Insets left="13.0" />
+                        </HBox.margin>
+                     </FontAwesomeIconView>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="174.0">
+                     <Label text="Top Series" textFill="#b0b0b0">
+                        <font>
+                           <Font size="18.0" />
+                        </font>
+                        <HBox.margin>
+                           <Insets left="5.0" />
+                        </HBox.margin>
+                     </Label>
+                  </HBox>
+               </HBox>
+            </graphic>
+            <VBox.margin>
+               <Insets left="-10.0" />
+            </VBox.margin>
+         </JFXButton>
+      </VBox>
+      <Separator layoutX="9.0" layoutY="209.0" prefWidth="220.0">
+         <padding>
+            <Insets top="5.0" />
+         </padding></Separator>
+      <VBox layoutY="212.0" prefHeight="211.0" prefWidth="250.0" spacing="5.0" style="-fx-background-color: transparent;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <Label prefHeight="42.0" prefWidth="162.0" text="Your library" textFill="#b0b0b0">
+            <VBox.margin>
+               <Insets left="10.0" />
+            </VBox.margin>
+            <font>
+               <Font name="Microsoft Sans Serif" size="18.0" />
+            </font>
+         </Label>
+         <JFXButton fx:id="now_watching_button" focusTraversable="false" graphicTextGap="14.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="267.0" styleClass="default-jfx-button" stylesheets="@../Styles/JFXButton.css" text="Now Watching">
+            <font>
+               <Font size="18.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+            <graphic>
+               <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="250.0">
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="47.0">
+                     <FontAwesomeIconView fill="#e0e0e0" glyphName="PLAY_CIRCLE" size="1.3em">
+                        <HBox.margin>
+                           <Insets left="8.0" />
+                        </HBox.margin>
+                     </FontAwesomeIconView>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="174.0">
+                     <Label text="Now Watching" textFill="#b0b0b0">
+                        <font>
+                           <Font size="18.0" />
+                        </font>
+                        <HBox.margin>
+                           <Insets left="3.0" />
+                        </HBox.margin>
+                     </Label>
+                  </HBox>
+               </HBox>
+            </graphic>
+            <VBox.margin>
+               <Insets left="-10.0" />
+            </VBox.margin>
+         </JFXButton>
+         <JFXButton fx:id="favorites_button" focusTraversable="false" graphicTextGap="14.0" layoutX="10.0" layoutY="52.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="267.0" styleClass="default-jfx-button" stylesheets="@../Styles/JFXButton.css" text="Favorites                ">
+            <font>
+               <Font size="18.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+            <graphic>
+               <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="250.0">
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="47.0">
+                     <FontAwesomeIconView fill="#e0e0e0" glyphName="HEART" size="1.3em">
+                        <HBox.margin>
+                           <Insets left="7.5" />
+                        </HBox.margin>
+                     </FontAwesomeIconView>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="174.0">
+                     <Label text="Favorites" textFill="#b0b0b0">
+                        <font>
+                           <Font size="18.0" />
+                        </font>
+                        <HBox.margin>
+                           <Insets left="3.0" />
+                        </HBox.margin>
+                     </Label>
+                  </HBox>
+               </HBox>
+            </graphic>
+            <VBox.margin>
+               <Insets left="-10.0" />
+            </VBox.margin>
+         </JFXButton>
+         <JFXButton fx:id="watch_list_button" focusTraversable="false" graphicTextGap="17.0" layoutX="10.0" layoutY="103.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="267.0" styleClass="default-jfx-button" stylesheets="@../Styles/JFXButton.css" text="Watch List              ">
+            <font>
+               <Font size="18.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+            <graphic>
+               <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="250.0">
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="47.0">
+                     <FontAwesomeIconView fill="#e0e0e0" glyphName="BOOKMARK" size="1.3em">
+                        <HBox.margin>
+                           <Insets left="7.5" />
+                        </HBox.margin>
+                     </FontAwesomeIconView>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="174.0">
+                     <Label text="Watch List" textFill="#b0b0b0">
+                        <font>
+                           <Font size="18.0" />
+                        </font>
+                        <HBox.margin>
+                           <Insets left="3.0" />
+                        </HBox.margin>
+                     </Label>
+                  </HBox>
+               </HBox>
+            </graphic>
+            <VBox.margin>
+               <Insets left="-10.0" />
+            </VBox.margin>
+         </JFXButton>
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </VBox>
+      <Separator layoutX="9.0" layoutY="421.0" prefWidth="220.0">
+         <padding>
+            <Insets top="8.0" />
+         </padding></Separator>
+      <VBox layoutY="424.0" prefHeight="154.0" prefWidth="250.0" spacing="5.0" style="-fx-background-color: transparent;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <Label prefHeight="42.0" prefWidth="162.0" text="Other" textFill="#b0b0b0">
+            <VBox.margin>
+               <Insets left="10.0" />
+            </VBox.margin>
+            <font>
+               <Font name="Microsoft Sans Serif" size="18.0" />
+            </font>
+         </Label>
+         <JFXButton fx:id="categories_button" focusTraversable="false" graphicTextGap="16.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="267.0" styleClass="default-jfx-button" stylesheets="@../Styles/JFXButton.css" text="Categories              ">
+            <font>
+               <Font size="18.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+            <graphic>
+               <HBox prefHeight="50.0" prefWidth="250.0">
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="47.0">
+                     <FontAwesomeIconView fill="#e0e0e0" glyphName="TABLE" size="1.3em">
+                        <HBox.margin>
+                           <Insets left="7.5" />
+                        </HBox.margin>
+                     </FontAwesomeIconView>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="174.0">
+                     <Label text="Categories" textFill="#b0b0b0">
+                        <font>
+                           <Font size="18.0" />
+                        </font>
+                        <HBox.margin>
+                           <Insets left="5.0" />
+                        </HBox.margin>
+                     </Label>
+                  </HBox>
+               </HBox>
+            </graphic>
+            <VBox.margin>
+               <Insets left="-10.0" />
+            </VBox.margin>
+         </JFXButton>
+         <JFXButton fx:id="novelties_button" focusTraversable="false" graphicTextGap="17.0" layoutX="10.0" layoutY="52.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="267.0" styleClass="default-jfx-button" stylesheets="@../Styles/JFXButton.css" text="Novelties                ">
+            <font>
+               <Font size="18.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+            <graphic>
+               <HBox prefHeight="50.0" prefWidth="250.0">
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="47.0">
+                     <FontAwesomeIconView fill="#e0e0e0" glyphName="CHECK" size="1.2em">
+                        <HBox.margin>
+                           <Insets left="7.5" />
+                        </HBox.margin>
+                     </FontAwesomeIconView>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="174.0">
+                     <Label text="Novelties" textFill="#b0b0b0">
+                        <font>
+                           <Font size="18.0" />
+                        </font>
+                        <HBox.margin>
+                           <Insets left="5.0" />
+                        </HBox.margin>
+                     </Label>
+                  </HBox>
+               </HBox>
+            </graphic>
+            <VBox.margin>
+               <Insets left="-10.0" />
+            </VBox.margin>
+         </JFXButton>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </VBox>
+      <Separator layoutX="9.0" layoutY="576.0" prefWidth="220.0" visible="false">
+         <padding>
+            <Insets top="5.0" />
+         </padding></Separator>
+   </AnchorPane>
+</VBox>

@@ -1,0 +1,26 @@
+/* MediaPage Buttons */
+.default-button {
+    -fx-background-color: #2B2B2BA5;
+}
+
+.default-button:hover {
+    -fx-background-color: #2A2A2AD6;
+}
+
+.clicked-button {
+    -fx-background-color: #383838C2;
+}
+
+.clicked-button:hover {
+    -fx-background-color: #444444C2;
+}
+
+/* Other Buttons */
+.default-jfx-button:hover {
+    -fx-background-color: #2A2A2A;
+}
+
+.default-jfx-button:disabled {
+    -fx-background-color: #3A3A3A;
+    -fx-text-fill: #888888;
+}

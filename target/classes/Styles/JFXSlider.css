@@ -1,0 +1,33 @@
+.jfx-slider .track {
+    -fx-background-color: #b0b0b0cc;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.time-slider .thumb {
+    -fx-opacity: 0;
+    -fx-pref-height: 12;
+    -fx-pref-width: 12;
+    -fx-background-color: #C14953;
+}
+
+.time-slider:hover .thumb {
+    -fx-opacity: 1;
+}
+
+.volume-slider .thumb {
+    -fx-opacity: 1;
+    -fx-pref-height: 10;
+    -fx-pref-width: 10;
+    -fx-background-color: #C14953;
+}
+
+.jfx-slider .colored-track {
+    -fx-background-color: linear-gradient(to right, #E60B09, #F89B29);
+}
+
+.jfx-slider-style .animated-thumb {
+    -fx-background-color: transparent;
+    -fx-text-fill: transparent;
+    -fx-opacity: 0;
+}

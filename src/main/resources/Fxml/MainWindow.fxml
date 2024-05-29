@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane fx:id="parent_anchorpane" style="-fx-background-color: #1E1E1E;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <StackPane style="-fx-background-color: transparent;">
+        <BorderPane fx:id="borderpane_parent">
+            <left>
+                <fx:include source="LeftPanel.fxml" />
+            </left>
+
+            <top>
+                <fx:include source="TopPanel.fxml" />
+            </top>
+        </BorderPane>
+        <Pane maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="741.0" prefWidth="1295.0" StackPane.alignment="CENTER_RIGHT">
+            <StackPane.margin>
+                <Insets bottom="-1.0" top="69.2" />
+            </StackPane.margin>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <fx:include maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="735.0" prefWidth="1295.0" source="CenterPanel.fxml" />
+        </Pane>
+    </StackPane>
+   <Line endX="240.0" endY="804.0" startX="240.0" startY="69.0" stroke="#3c3c3c" />
+   <Line endX="1500.0" endY="69.0" startX="206.5" startY="69.0" stroke="#3c3c3c" AnchorPane.rightAnchor="0.0" />
+</AnchorPane>

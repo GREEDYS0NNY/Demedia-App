@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="735.0" prefWidth="1292.0" stylesheets="@../Styles/Other.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.de.project_demedia_app.Controllers.Sections.YourLibrarySectionController">
+   <ScrollPane hbarPolicy="NEVER" layoutX="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="724.0" prefWidth="1283.0" AnchorPane.leftAnchor="3.2000000000000455" AnchorPane.rightAnchor="-2.5">
+      <VBox alignment="CENTER" prefHeight="734.0" prefWidth="1278.0" styleClass="background-color" stylesheets="@../Styles/Other.css">
+         <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="103.0" prefWidth="1280.0" spacing="20.0" style="-fx-background-color: transparent;">
+            <JFXButton fx:id="anime_gridpane_button" contentDisplay="CENTER" focusTraversable="false" graphicTextGap="0.0" prefHeight="50.0" prefWidth="150.0" style="-fx-border-color: #3C3C3C; -fx-background-radius: 15; -fx-border-radius: 15; -fx-background-color: #2D2D2D;" styleClass="default-jfx-button" stylesheets="@../Styles/JFXButton.css" text=" ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="45.0" style="-fx-background-color: transparent;" text="Anime" textFill="#b0b0b0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="films_gridpane_button" contentDisplay="CENTER" focusTraversable="false" graphicTextGap="0.0" layoutX="404.0" layoutY="36.0" prefHeight="50.0" prefWidth="150.0" style="-fx-border-color: #3C3C3C; -fx-background-radius: 15; -fx-border-radius: 15; -fx-background-color: #2D2D2D;" styleClass="default-jfx-button" stylesheets="@../Styles/JFXButton.css" text=" ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" style="-fx-background-color: transparent;" text="Films" textFill="#b0b0b0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="series_gridpane_button" contentDisplay="CENTER" focusTraversable="false" graphicTextGap="0.0" layoutX="745.0" layoutY="36.0" prefHeight="50.0" prefWidth="150.0" style="-fx-border-color: #3C3C3C; -fx-background-radius: 15; -fx-border-radius: 15; -fx-background-color: #2D2D2D;" styleClass="default-jfx-button" stylesheets="@../Styles/JFXButton.css" text=" ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" style="-fx-background-color: transparent;" text="Series" textFill="#b0b0b0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </graphic>
+            </JFXButton>
+         </HBox>
+         <AnchorPane style="-fx-background-color: transparent;">
+            <AnchorPane fx:id="anime_anchorpane" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="10.400000000000091">
+               <HBox prefHeight="754.0" prefWidth="1270.0">
+                  <GridPane fx:id="anime_gridpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1160.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="205.0" minHeight="10.0" prefHeight="205.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="205.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="205.0" minHeight="10.0" prefHeight="205.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="205.0" minHeight="10.0" prefHeight="205.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <HBox.margin>
+                        <Insets left="60.0" right="60.0" />
+                     </HBox.margin>
+                  </GridPane>
+               </HBox>
+            </AnchorPane>
+            <AnchorPane fx:id="films_anchorpane" visible="false" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="10.400000000000091">
+               <HBox prefHeight="754.0" prefWidth="1270.0">
+                  <GridPane fx:id="films_gridpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1160.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="205.0" minHeight="10.0" prefHeight="205.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="205.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="205.0" minHeight="10.0" prefHeight="205.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="205.0" minHeight="10.0" prefHeight="205.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <HBox.margin>
+                        <Insets left="60.0" right="60.0" />
+                     </HBox.margin>
+                  </GridPane>
+               </HBox>
+            </AnchorPane>
+            <AnchorPane fx:id="series_anchorpane" visible="false" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="10.400000000000091">
+               <HBox prefHeight="754.0" prefWidth="1270.0">
+                  <GridPane fx:id="series_gridpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1160.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="205.0" minHeight="10.0" prefHeight="205.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="205.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="205.0" minHeight="10.0" prefHeight="205.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="205.0" minHeight="10.0" prefHeight="205.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <HBox.margin>
+                        <Insets left="60.0" right="60.0" />
+                     </HBox.margin>
+                  </GridPane>
+               </HBox>
+            </AnchorPane>
+         </AnchorPane>
+      </VBox>
+      <stylesheets>
+         <URL value="@../Styles/ScrollPane.css" />
+         <URL value="@../Styles/Other.css" />
+      </stylesheets>
+      <styleClass>
+         <String fx:value="scroll-bar" />
+         <String fx:value="background-color" />
+      </styleClass>
+      <padding>
+         <Insets top="2.0" />
+      </padding>
+   </ScrollPane>
+   <styleClass>
+      <String fx:value="background-color" />
+      <String fx:value="border-color" />
+   </styleClass>
+</AnchorPane>
